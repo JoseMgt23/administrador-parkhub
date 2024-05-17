@@ -148,11 +148,26 @@ return [
             'text' => 'Home',
             'icon' => 'ti ti-home',
             'url' => 'home'
-        ],
+        ],  
         [
             'text' => 'Parqueaderos',
             'icon' => 'ti ti-car',
             'url' => '/parqueaderos'
+        ],
+        [
+            'text' => 'Reservas',
+            'icon' => 'ti ti-receipt',
+            'url' => '/reserva'
+        ],
+        [
+            'text' => 'Metodo de Pago',
+            'icon' => 'ti ti-money  ',
+            'url' => '/metododepago'
+        ],
+        [
+            'text' => 'Localizaciones',
+            'icon' => 'ti ti-location-pin',
+            'url' => '/localizacion'
         ],
 
         [

@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('usuario_id');
+            $table->unsignedBigInteger('users_id');
             $table->unsignedBigInteger('parqueadero_id');
             $table->dateTime('fecha_inicio');
             $table->dateTime('fecha_fin');
             $table->enum('estado', ['confirmada', 'cancelada', 'en espera'])->default('en espera');
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('parqueadero_id')->references('id')->on('parqueaderos')->onDelete('cascade');   
         });
     }
